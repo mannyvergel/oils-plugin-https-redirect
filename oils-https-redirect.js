@@ -8,7 +8,8 @@ module.exports = function (pluginConf, web, done) {
 		var shouldRedirect = web.conf.isProd &&
 							!req.secure &&
 							( (req.subdomains.indexOf('www') != -1 && req.originalUrl == '/')
-							|| req.originalUrl.indexOf('/login') == 0);
+							|| req.originalUrl.indexOf('/login') == 0
+							|| req.originalUrl.indexOf('/register') == 0);
 
 		if (web.conf.isDebug) {
 			console.debug("[plugin-https-redirect] secure", req.secure, "isProd", web.conf.isProd, req.subdomains, req.originalUrl);
