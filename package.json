@@ -1,0 +1,27 @@
+{
+  "name": "oils-plugin-https-redirect",
+  "version": "2.4.0",
+  "description": "Redirect critical parts to https usually the root and login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannyvergel/oils-plugin-https-redirect.git"
+  },
+  "keywords": [
+    "oils",
+    "plugin",
+    "https",
+    "redirect",
+    "www",
+    "seo"
+  ],
+  "author": "Manny Vergel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mannyvergel/oils-plugin-https-redirect/issues"
+  },
+  "homepage": "https://github.com/mannyvergel/oils-plugin-https-redirect#readme"
+}
