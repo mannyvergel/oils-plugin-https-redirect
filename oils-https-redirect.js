@@ -12,8 +12,8 @@ module.exports = function (pluginConf, web, done) {
 
 		var shouldRedirect = web.conf.isProd &&
 							!req.secure &&
-							(pluginConf.shouldRedirectOriginal() ||
-							pluginConf.shouldRedirect());
+							(pluginConf.shouldRedirectOriginal(req) ||
+							pluginConf.shouldRedirect(req));
 
 		if (pluginConf.isDebug) {
 			console.debug("[plugin-https-redirect] secure", req.secure, "isProd", web.conf.isProd, req.subdomains, req.originalUrl);

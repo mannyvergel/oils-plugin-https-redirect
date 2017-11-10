@@ -1,6 +1,6 @@
 {
   "name": "oils-plugin-https-redirect",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "description": "Redirect critical parts to https usually the root and login",
   "main": "index.js",
   "scripts": {
